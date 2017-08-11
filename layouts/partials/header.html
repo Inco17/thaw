@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ .Hugo.Generator }}
+    <meta charset="utf-8">
+    <title>{{ .Title }} - CharAct3</title>
+
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/base.css">
+</head>
+<body>
+<nav class="navbar navbar-default transparent-nav" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img class="navbar-brand" style="padding: 2px"
+                 width="48" src="/img/brand.png">
+            <a class="navbar-brand brand-text" href="#">&nbsp;{{ .Title }}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#"><span class="glyphicon glyphicon-fire"></span>
+                    blogs</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input class="form-control search-field" type="text" placeholder="search">
+                        <div class="input-group-addon" style="background-color: transparent;">
+                            <button class="base-button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"> 
+                            </span> Follow me <span class="caret"></span></a>
+                        <ul class="dropdown-menu transparent-nav" role="menu">
+                            <li><a href="{{ .Site.Params.GithubURL }}">Github</a></li>
+                            <li class="divider"></li>
+                            <li><a>{{ .Site.Params.Email }}</a></li>
+                        </ul>
+                    </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

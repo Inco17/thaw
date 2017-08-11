@@ -1,0 +1,244 @@
+:root {
+  --main-color: coral;
+}
+
+body {
+    background-image: url("../img/background.png");
+    border-top: 2px solid var(--main-color);
+}
+a, a:hover {
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+label {
+    font-weight: 300;
+}
+.no-pad {
+    padding: 0;
+}
+h5 {
+    font-size: 16px;
+}
+i small {
+    color: #777;
+}
+
+/* navbar */
+.transparent-nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0;
+    /*opacity: 0.6;*/
+}
+
+.brand-text {
+    font-family: Arial,Verdana,Sans-serif;
+    font-style: italic;
+    color: var(--main-color) !important;
+}
+
+.navbar .active > a {
+    color: var(--main-color) !important;
+    background-color: transparent !important;
+}
+
+.navbar li > a:hover {
+    color: var(--main-color) !important;
+    background-color: transparent;
+}
+
+.search-field {
+    height: 35px;
+}
+
+/* form */
+.input-group-addon button {
+    background: transparent;
+    border: 0;
+}
+button.btn-default:hover {
+    color: var(--main-color) !important;
+    background-color: #fff !important;
+    border-color: var(--main-color) !important;
+}
+
+form input:hover,form textarea:hover {
+    border-color: var(--main-color);
+}
+
+form input:focus,form textarea:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: var(--main-color) 0 0 3px !important;
+}
+
+/* content */
+h3.box-header {
+    border-bottom: 2px solid var(--main-color);
+    color: #888;
+}
+.reg-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgba(248, 248, 248, 0.6);
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-shadow: #aaa 0 0 5px 2px;
+}
+.inner-login-box {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.social-auth {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+.base-button {
+    color: var(--main-color);
+}
+
+/* Profile */
+.top-bg {
+    width: 100%;
+    height: 100px;
+    background: url("../img/background_orange_waves.gif");
+    border: 2px solid var(--main-color);
+    border-bottom: 0;
+    border-radius: 8px 8px 0 0;
+    box-shadow: #ccc 0 -2px 2px 2px;
+}
+.profile-board {
+    margin-bottom: 30px;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    border: 2px solid var(--main-color);
+    border-top: 0;
+    box-shadow: #ccc 0 2px 2px 2px;
+}
+.board-left {
+    padding: 0;
+    text-align: center;
+}
+.board-left li.active a {
+    background-color: tomato;
+    color: #eee !important;
+}
+.board-right {
+    padding-bottom: 45px;
+    border-left: 1px solid #ccc;
+}
+.big-avatar{
+    width: 120px;
+    height: 120px;
+}
+
+/* post */
+.part-box {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: var(--main-color) 1px solid;
+    border-radius: 5px;
+    box-shadow: #ccc 0 0 3px 2px;
+}
+.post-form {
+    padding: 15px 10px;
+}
+.user-box {
+    height: 183px;
+    text-align: center;
+}
+.avatar-part {
+    height: 80px;
+    padding-top: 35px;
+    background: url("../img/background_orange_waves.gif");
+}
+.inner-part {
+    margin: 20px;
+    padding: 0 30px;
+}
+.post-box {
+    padding: 15px;
+}
+.post-act {
+    padding-top: 15px;
+    text-align: center;
+    border-top: #ccc solid 1px;
+}
+.to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 50px;
+    padding: 15px;
+    background: rgba(200, 200, 200, 0.6);
+}
+.follow {
+    padding: 5px 10px;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+}
+.more {
+    padding: 15px;
+    text-align: center;
+}
+
+/* user */
+.follow-box {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.follow-box:hover {
+    background-color: #ccc;
+    box-shadow: #ccc 0 0 2px 2px;
+}
+
+/* comment */
+.tag{margin-bottom: 15px; padding:5px; box-shadow: #ccc  0 0 2px 2px ;border:1px solid var(--main-color); position:relative; background-color:#FFF;}
+.tag em{display:block; position:absolute;left:45%; top:-40px; border-width:20px; border-color:transparent transparent var(--main-color); border-style:solid;}
+
+hr.small-line {
+    margin: 5px 0;
+}
+
+/* page */
+.paginate {
+    margin: 10px;
+}
+
+/* footer */
+.site-footer {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    padding: 25px 0;
+    background-color: #ccc;
+}
+
+/* font */
+.gray-font {
+    color: #888;
+}
+.error {
+    color: #A94442;
+    font-weight: 300;
+}
+.errorlist {
+    color: #A94442;
+font-weight: 300;
+}
+.errorlist li {
+    list-style: circle;
+}
+.text-header {
+    display: block;
+    padding: 15px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    color: #888;
+}
+.dec {
+}
