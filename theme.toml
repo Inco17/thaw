@@ -1,0 +1,13 @@
+name = "Thaw"
+license = "MIT"
+licenselink = "https://github.com/charact3/thaw/blob/master/LICENSE.md"
+description = "A simple hugo theme."
+homepage = "http://example.com/"
+tags = ["blog",]
+features = ["blog",]
+min_version = "0.25"
+
+[author]
+  name = "CharAct3"
+  homepage = ""
+
