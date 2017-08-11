@@ -1,10 +1,14 @@
 :root {
-  --main-color: coral;
+  --main-color: #A94442;
+}
+.content {
+    min-height: calc(100vh - 166px);
 }
 
 body {
     background-image: url("../img/background.png");
     border-top: 2px solid var(--main-color);
+    font-family: Optima, Candara, Calibri, Arial, sans-serif;
 }
 a, a:hover {
     color: var(--main-color);
@@ -32,10 +36,8 @@ i small {
 }
 
 .brand-text {
-    font-family: Arial,Verdana,Sans-serif;
-    font-style: italic;
     color: var(--main-color) !important;
-}
+} 
 
 .navbar .active > a {
     color: var(--main-color) !important;
@@ -48,7 +50,7 @@ i small {
 }
 
 .search-field {
-    height: 35px;
+    height: 36px;
 }
 
 /* form */
@@ -179,26 +181,6 @@ h3.box-header {
     color: #fff;
     cursor: pointer;
 }
-.more {
-    padding: 15px;
-    text-align: center;
-}
-
-/* user */
-.follow-box {
-    margin-bottom: 15px;
-    padding: 15px;
-    background-color: #eee;
-    border-radius: 5px;
-}
-.follow-box:hover {
-    background-color: #ccc;
-    box-shadow: #ccc 0 0 2px 2px;
-}
-
-/* comment */
-.tag{margin-bottom: 15px; padding:5px; box-shadow: #ccc  0 0 2px 2px ;border:1px solid var(--main-color); position:relative; background-color:#FFF;}
-.tag em{display:block; position:absolute;left:45%; top:-40px; border-width:20px; border-color:transparent transparent var(--main-color); border-style:solid;}
 
 hr.small-line {
     margin: 5px 0;
@@ -222,17 +204,6 @@ hr.small-line {
 /* font */
 .gray-font {
     color: #888;
-}
-.error {
-    color: #A94442;
-    font-weight: 300;
-}
-.errorlist {
-    color: #A94442;
-font-weight: 300;
-}
-.errorlist li {
-    list-style: circle;
 }
 .text-header {
     display: block;
